@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Component
-@FeignClient(name= "apigateway")
+@FeignClient(name= "customer-service")
 public interface UserAPI {
-    @GetMapping("/api/customer-profile/user/{userID}")
+    @GetMapping("/api/customer-profile/customer/{userId}")
     ResponseEntity<ResponseDto<User>> getUser(@PathVariable String userId);
 }
