@@ -43,7 +43,7 @@ public class PackageCustomizationController {
 
     @DeleteMapping("/packages/{id}")
     public String deletPackageById(@PathVariable("id") Long id) {
-        packageService.deletPackageById(planId);
+        packageService.deletPackageById(id);
         return "Deleted Successfully";
     }
 }
