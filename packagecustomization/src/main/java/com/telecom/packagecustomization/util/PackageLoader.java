@@ -1,8 +1,10 @@
 package com.telecom.packagecustomization.util;
 
+import com.telecom.packagecustomization.model.Packages;
+
 import java.util.ArrayList;
 import java.util.List;
-import com.telecom.packagecustomization.model.Packages;
+
 
 public class PackageLoader {
     private List<Packages> packageList = new ArrayList<Packages>();
